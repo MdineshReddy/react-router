@@ -1,0 +1,39 @@
+section {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+section .img-container {
+  max-width: 800px;
+  margin-right: 20px;
+}
+
+section .img-container img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+section h1 {
+  color: rgb(243, 82, 109);
+  margin: 2rem 0;
+}
+section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 5px;
+    display: block;
+  }
+}
+
+.btn {
+  border: 2px solid rgb(243, 82, 109);
+  padding: 1.2em;
+  background-color: rgb(243, 82, 109, 0.5);
+  font-size: 1.2rem;
+}

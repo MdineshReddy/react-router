@@ -1,13 +1,127 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #333;
+  color: #e3e3e3;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+nav header h1 {
+  color: rgb(243, 82, 109) !important;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: block;
+  }
+  nav header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+main h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgb(243, 82, 109);
+  margin-bottom: 1rem;
+}
+main p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.profile-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.profile_img {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+}
+
+/* products css */
+.products {
+  display: grid;
+  max-width: 90vw;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  justify-content: right;
+}
+
+.products .product {
+  width: 600px;
+  max-width: 90vw;
+}
+
+.products .product img {
+  width: 100%;
+}
+
+.products .product .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products .product .info a {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    display: block;
+  }
+  .product {
+    margin-bottom: 2rem;
+  }
+}
+
+.btn {
+  border: 2px solid rgb(243, 82, 109);
+  padding: 1.2em;
+  background-color: rgb(243, 82, 109, 0.5);
+  font-size: 1.2rem;
+  color: white;
 }
