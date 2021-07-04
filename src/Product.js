@@ -6,7 +6,7 @@ import "./product.css";
 function Product() {
   const [name, setName] = useState("default name");
   const { id } = useParams();
-  console.log(`./images/products/product_${id}.jpg`);
+  document.title = "Product " + id;
 
   useEffect(() => {
     const newProduct = productData.find(

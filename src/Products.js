@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import productData from "./productsData";
 
 function Products() {
+  document.title = "Products";
   return (
     <main>
       <h2>Products</h2>

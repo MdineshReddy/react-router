@@ -1,6 +1,7 @@
 import React from "react";
 
 function About() {
+  document.title = "About";
   return (
     <main>
       <h2>About the Page</h2>
